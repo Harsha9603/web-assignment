@@ -35,6 +35,11 @@ section {
 
 h1, h2 {
     margin-top: 0;
+h2 {
+    background-color: #eeeeee;
+    padding: 5px;
+    border-radius: 5px;
+}
 }
 
 label {
