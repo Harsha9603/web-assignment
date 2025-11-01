@@ -1,0 +1,23 @@
+// Button to change text on click
+document.getElementById('changeTextBtn').addEventListener('click', function() {
+    document.getElementById('demo').textContent = "You clicked the button! Great job!";
+});
+
+// Form submission handling with simple validation feedback
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from submitting normally
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const messageElem = document.getElementById('formMessage');
+
+    if (name === '' || email === '') {
+        messageElem.style.color = 'red';
+        messageElem.textContent = "Please fill in all fields.";
+    } else {
+        messageElem.style.color = 'green';
+        messageElem.textContent = `Thank you, ${name}. We received your message.`;
+        // Clear inputs
+        this.reset();
+    }
+});

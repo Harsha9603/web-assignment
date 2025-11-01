@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medium Length Web Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Medium Length Web Project</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About This Project</h2>
+        <p>This is a sample web project demonstrating HTML, CSS, and JavaScript integration.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Responsive layout</li>
+            <li>Interactive button</li>
+            <li>Simple form validation</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <button id="changeTextBtn">Click Me!</button>
+    <p id="demo">This text will change when you click the button.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
